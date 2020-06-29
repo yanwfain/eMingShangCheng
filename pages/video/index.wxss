@@ -1,0 +1,124 @@
+/* pages/video/index.wxss */
+.nont_del{
+  padding: 20rpx;
+  text-align: center;
+  margin-top:300rpx;
+
+}
+.goIndex{
+  margin: 0 auto;
+border-radius: 100rpx;
+height: 76rpx;
+line-height: 76rpx;
+width: 280rpx;
+font-size: 30rpx;
+padding: 0;
+background: transparent;
+color: #ff5555;
+border: 1px solid #ff5555;
+box-sizing: border-box;
+cursor: pointer;
+font-family: inherit;
+  text-align: center;
+
+}
+.searchBox{
+  width: 100%;
+}
+swiper{
+  width: 100%;
+}
+.imgheight{
+  width: 100%;
+  /* position: relative; */
+}
+.right_1{
+  width: 74%;
+  margin-left:2%;
+  font-size: 34rpx;
+  padding: 10rpx 2rpx;
+  float: right;
+}
+.zhuanfa{
+    width:60rpx;
+  height:60rpx;
+  position: fixed;
+  z-index: 999;
+  top:44%;
+  right: 10rpx;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  margin: 0;
+  padding: 0;
+
+  }
+.qunabu{
+  width:60rpx;
+  height:60rpx;
+  position: fixed;
+  z-index: 999;
+  top:50%;
+  right: 10rpx;
+  background: white;
+}
+.qunabu image{
+  width: 100%;
+  height: 100%;
+}
+.cont_shop{
+  width: 90%;
+  position: relative;
+  z-index: 2;
+  left:4%;
+  bottom: 18%;
+  padding: 10rpx 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+.cont_shop image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.money_bot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:20rpx;
+
+}
+.look_s{
+  padding: 4rpx 20rpx;
+  background: rgb(243, 154, 20);
+  color: white;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+}
+.money{
+  font-size: 30rpx;
+  color: red;
+
+  text-align: right;
+}
+video{
+  width: 100%;
+  /* position: absolute; */
+  z-index: 1;
+  top:0;
+  left:0;
+}
+page{
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+mp-video-swiper {
+    width: 100%;
+    height: 100%;
+}

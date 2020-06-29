@@ -1,0 +1,48 @@
+<block wx:if="{{weishipinglist.length>=1}}">
+<view class="searchBox">
+  <swiper class='shop_swiper' style="height:{{height}}px" vertical="true" duration="300"  circular='true' hidden='{{luboActive}}' class='lbImg' bindchange="bindchange">
+    <block wx:for="{{weishipinglist}}" wx:key="index">
+      <swiper-item class="imgheight">
+        <video data-index="{{index}}" show-center-play-btn="{{false}}" id="myvideo{{hkindex}}" loop show-fullscreen-btn="{{false}}" show-play-btn="{{false}}" enable-play-gesture controls="{{false}}"
+          bindpause="bindpause" bindplay="bindplay" autoplay="{{hkindex==index?true:false}}" auto-pause-if-open-native="true" auto-pause-if-navigate="true" style="height:{{height}}px" src="{{weishipinglist[hkindex].video}}"></video>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="cont_shop" bindtap="goShopFn" data-id="{{weishipinglist[hkindex].id}}">
+  <image src="{{weishipinglist[hkindex].thumb}}"></image>
+  <view class="right_1">
+    <view class="titles_tit">{{weishipinglist[hkindex].title}}</view>
+    <view class="money_bot">
+      <view class="money">￥{{weishipinglist[hkindex].marketprice}}</view>
+      <view class="look_s">去看看 > </view>
+    </view>
+  </view>
+</view>
+<view class="qunabu" bindtap="allLook">
+  <image src="../../static/images/tabbar/icon-2.png"></image>
+</view>
+<button open-type="share" class="zhuanfa"> <i class="icox icox-send" style="font-size: 32px;color: #fd5555;"></i></button>
+</block>
+<block wx:else>
+<view class="nont_del">
+  暂时没有任何精选内容哦~
+</view>
+<view class="goIndex" bindtap="indexFn">去首页逛逛</view>
+
+</block>
+<!-- <block wx:for="{{list}}">
+<mp-video-swiper 
+  class="video-swiper" 
+  data-index="{{index}}"
+  video-list="{{list[index].video}}" 
+  bindplay="onPlay"
+  bindpause="onPause"
+  bindtimeupdate="onTimeUpdate"
+  bindended="onEnded"
+  binderror="onError"
+  bindwaiting="onWaiting"
+  bindprogress="onProgress"
+  bindloadedmetadata="onLoadedMetaData"
+></mp-video-swiper>
+</block> -->

@@ -1,0 +1,5 @@
+<view class="cont">
+  <view class="cont_list" wx:for="{{weishipinglist}}" wx:key="index" data-index="{{index}}" bindtap="lookvideo" data-id="{{item.id}}">
+    <image src="{{item.thumb}}"></image>
+  </view>
+</view>
